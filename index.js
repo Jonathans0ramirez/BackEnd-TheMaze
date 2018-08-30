@@ -24,7 +24,7 @@ var jugadores = [];
 function setup(){
     createCanvas(398,398);
     background(51);
-    socket = io.connect('http://localhost:3000');
+    socket = io.connect();
 
     var data = {
       x: jugador.x,
