@@ -192,6 +192,8 @@ function esValido(){
   canPlay = false;
   return canPlay;
   }
+  canPlay = false;
+  return canPlay;
 }
 
 function aumentarsize() {
@@ -211,6 +213,9 @@ function aumentarsize2() {
 }
 
 function createWorld(){
+  noStroke();
+  fill(0,0,0);
+  rect(-2,-2,400,400);
   noStroke();
   fill(0,255,0);
   rect(-2+40*3,-2+40*9,40,40);
