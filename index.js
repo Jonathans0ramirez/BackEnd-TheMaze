@@ -66,14 +66,6 @@ function draw(){
     jugador['youWin'] = ganaste;
     ellipse(jugador.x, jugador.y, jugador.tamano*2, jugador.tamano*2);
     gano();
-    /*for(var i = jugadores.length - 1; i >= 0; i--) {
-      var id = jugadores[i].id;
-      if (id !== socket.id){
-        fill(182, 208, 239);
-        stroke(1);
-        ellipse(jugadores[i].x, jugadores[i].y, jugadores[i].tamano*2, jugadores[i].tamano*2);
-    }
-  }*/
 
   } else {
     size = 5;
