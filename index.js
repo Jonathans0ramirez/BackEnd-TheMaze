@@ -7,8 +7,8 @@ const red = getcolorAleatorio();
 const green = getcolorAleatorio();
 const blue = getcolorAleatorio();
 let jugador = {
-  x: 0,
-  y: 0,
+  x: -10,
+  y: -10,
   color : {
     R: red,
     G: green,
