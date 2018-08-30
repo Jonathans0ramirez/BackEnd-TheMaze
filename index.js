@@ -47,6 +47,7 @@ function setup(){
 }
 
 function draw(){
+  noCursor();
   if(!ganaste){
   createWorld();
   fill(jugador.color.R,jugador.color.G,jugador.color.B);
@@ -65,7 +66,6 @@ function draw(){
     jugador['youWin'] = ganaste;
     ellipse(jugador.x, jugador.y, jugador.tamano*2, jugador.tamano*2);
     gano();
-
     /*for(var i = jugadores.length - 1; i >= 0; i--) {
       var id = jugadores[i].id;
       if (id !== socket.id){
@@ -77,12 +77,18 @@ function draw(){
 
   } else {
     size = 5;
+    jugador['x'] = -10;
+    jugador['y'] = -10;
     jugador['tamano'] = size;
   }
 } else{
   console.log(ganaste)
   createCanvas(398,398);
   background(51);
+  size = 5;
+  jugador['x'] = -10;
+  jugador['y'] = -10;
+  jugador['tamano'] = size;
   textFont('Arial',70);
   textAlign(CENTER, BASELINE);
   text('¡Ganaste!', 190, 200);
